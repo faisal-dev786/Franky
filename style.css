@@ -57,14 +57,14 @@
         .main_banner_h1 sup {
             font-size: 20px;
         }
-        .btn{
+        .btn {
             background-color: #F48F86;
             color: white;
             border: none;
             border-radius: 30px;
-            padding: 5px 15px;
+            padding: 8px 20px;
             margin-top: 20px;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
         }
         .grid_cta_banner {
             display: grid;
@@ -78,7 +78,24 @@
            
           
         }
-        .cta_banner_lastChild{
-            margin-top: 10px;
+       
+        .cta_banner_lastChild {
+            margin-top: 2px;
         }
-
+    
+        .nested_cta {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .grid_mainBanner p{
+            margin-top: 5px;
+            
+        }
+        .grid_cta_banner p {
+            color:#4B9C8E;
+        }
+        .none{
+            display: none;
+        }
+      

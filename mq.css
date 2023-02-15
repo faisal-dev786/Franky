@@ -1,89 +1,126 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
-    img{
-        max-width: 100%;
-    }
-    .wrapper{
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 80%;
+    margin: auto;
+}
+
+@font-face {
+    font-family: 'boldenvan_demoregular';
+    src: url('./Fonts/boldenvan/boldenvan-demo-webfont.woff') format('woff'),
+        url('./Fonts//boldenvan/boldenvan-demo-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media all and (min-width:560px) {
+    .wrapper {
         max-width: 1280px;
         width: 80%;
         margin: auto;
     }
-    
-    @font-face {
+
+    .grid_mainBanner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .nested_mainBanner {
+        display: flex;
+        position: relative;
+        margin-top: -102px;
+        max-width: 100%;
+        background-image: url('./images/Ellipse\ 49.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: fit-content;
+
+    }
+
+    .box_brown {
+        height: 512px;
+        position: absolute;
+        top: 380px;
+        right: -127px;
+    }
+
+    .main_banner_h1 {
+        color: #5EC3B2;
+        font-size: 65px;
+        /* font-weight: bold; */
         font-family: 'boldenvan_demoregular';
-        src: url('./Fonts/boldenvan/boldenvan-demo-webfont.woff') format('woff'),
-             url('./Fonts//boldenvan/boldenvan-demo-webfont.woff2') format('woff2');
-        font-weight: normal;
-        font-style: normal;
-    
+        letter-spacing: 2px;
+        margin-top: 160px;
     }
-    
-    @media all and (min-width:560px){
-        .wrapper{
-            max-width: 1280px;
-            width: 80%;
-            margin: auto;
-        }
-        .grid_mainBanner {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 20px;
-        }
-        .nested_mainBanner{
-            display: flex;
-            position: relative;
-            margin-top: -102px;
-            max-width: 100%;
-    
-        }
-        .box_brown {
-            height: 512px;
-            position: absolute;
-            top: 380px;
-            right: -127px;
-        }
-        .main_banner_h1{
-            color: #5EC3B2;
-            font-size: 65px;
-            /* font-weight: bold; */
-            font-family: 'boldenvan_demoregular';
-            letter-spacing: 2px;
-            margin-top: 160px;
-        }
-        .main_banner_h1 sup {
-            font-size: 20px;
-        }
-        .btn{
-            background-color: #F48F86;
-            color: white;
-            border: none;
-            border-radius: 30px;
-            padding: 5px 15px;
-            margin-top: 20px;
-        }
-        .grid_cta_banner {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            position: absolute;
-            top: -157px !important;
-            background-color: white;
-            height: 60px;
-            z-index: 999;
-            
-        }
-        .grid_cta_banner_main{
-            position: relative;
-            
-           
-          
-        }
-        .cta_banner_lastChild{
-            margin-top: 10px;
-        }
-        .grid_cta_banner img{
-            max-width: 260px;
-        }
+
+    .main_banner_h1 sup {
+        font-size: 20px;
     }
+
+    .btn {
+        background-color: #F48F86;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        padding: 8px 20px;
+        margin-top: 20px;
+    }
+
+    .grid_cta_banner {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        position: absolute;
+        top: -157px !important;
+        background-color: #DFF3F0;
+        height: 60px;
+        z-index: 999;
+        max-width: 1050px;
+        border-radius: 50px;
+        padding-left: 20px;
+
+       
+    }
+
+    .grid_cta_banner>div {
+        max-width: 240px;
+    }
+
+    .grid_cta_banner_main {
+        position: relative;
+
+
+    }
+
+    .cta_banner_lastChild {
+        margin-top: 2px;
+    }
+
+    .nested_cta {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    .grid_mainBanner p{
+        margin-top: 5px;
+        
+    }
+   .grid_cta_banner p {
+        color:#4B9C8E;
+    }
+    .none{
+        display: unset;
+    }
+}
