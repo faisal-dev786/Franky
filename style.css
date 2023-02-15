@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    img{
+        max-width: 100%;
+    }
+    .wrapper{
+        max-width: 1280px;
+        width: 80%;
+        margin: auto;
+    }
+    
+    @font-face {
+        font-family: 'boldenvan_demoregular';
+        src: url('./Fonts/boldenvan/boldenvan-demo-webfont.woff') format('woff'),
+             url('./Fonts//boldenvan/boldenvan-demo-webfont.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
+    
+
+        .wrapper{
+            max-width: 1280px;
+            width: 80%;
+            margin: auto;
+        }
+        .grid_mainBanner {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 20px;
+            /* overflow-x: hidden; */
+        }
+        .nested_mainBanner{
+            display: flex;
+            position: relative;
+            margin-top: -102px;
+            max-width: 75%;
+    
+        }
+        .box_brown{
+            height: 200px;
+            position: absolute;
+            top: 120px;
+            right: -70px;
+        }
+        .main_banner_h1{
+            color: #5EC3B2;
+            font-size: 40px;
+            /* font-weight: bold; */
+            font-family: 'boldenvan_demoregular';
+            letter-spacing: 2px;
+            margin-top: 30px;
+        }
+        .main_banner_h1 sup {
+            font-size: 20px;
+        }
+        .btn{
+            background-color: #F48F86;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 5px 15px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .grid_cta_banner {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: -20px;
+            
+        }
+        .grid_cta_banner_main{
+            position: relative;
+            background-color: white;
+           
+          
+        }
+        .cta_banner_lastChild{
+            margin-top: 10px;
+        }
+
